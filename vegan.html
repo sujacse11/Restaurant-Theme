@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant theme</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/output.css">
+  
+
+</head>
+<body class="font-[Poppins] overflow-x-hidden">
+   
+<!-- Top Bar -->
+<div class="bg-gray-200 py-4 px-6  text-xl text-centerflex flex-col md:flex-row items-center justify-between text-sm ">
+    <p class="text-balck text-xl text-center   md:mb-0">Subscribe to our newsletter - 
+        <span class=" text-balck text-lg  text-center font-semibold font-Manrope">mykitchen@gmail.com </span>
+    </p>
+</div>
+
+<!-- Main Header -->
+<header class="max-w-7xl mx-auto px-6 md:px-16 py-6">
+    <div class="flex flex-col md:flex-row items-center justify-between border-b pb-6">
+      
+        <!-- Logo -->
+        <div class="text-center md:text-left mb-4 md:mb-0">
+            <img src="./assets/images/logo.png" alt="Logo" class="h-16 w-auto">
+        </div>
+
+        <!-- Search -->
+        <div class="flex justify-end">
+            <div class="flex items-center w-full md:w-80">
+                <input type="text" placeholder="Search" class="w-3/4 border-b  outline-none text-md text-black px-1 py-2">
+        
+                <!-- Search Icon Button -->
+                <button class="ml-4 bg-red-600 w-10 h-10 rounded-full flex items-center justify-center">
+                    <img src="./assets/images/search.png" alt="Search" class="w-4 h-4">
+                </button>
+            </div>
+        </div>
+    </div>
+
+<!-- Navbar -->
+<nav class="mt-6 border-b pb-4">
+    <ul class="flex flex-col md:flex-row gap-4 md:gap-10 text-center md:text-left font-lg">
+        <li><a href="index.html" class="text-red-500 hover:text-red-500 font-lg" >HOME</a></li>
+        <li><a href="receipes.html" class=" hover:text-red-500 font-lg">RECIPES</a></li>
+        <li><a href="blog.html" class=" hover:text-red-500 font-lg">BLOG</a></li>
+        <li><a href="about.html" class=" hover:text-red-500 font-lg">ABOUT ME</a></li>
+    </ul>
+</nav>
+</header>
+
+<!-- Section-->
+
+<!--para-->
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 ">
+
+    <!-- Heading -->
+    <h1 class="text-center text-2xl sm:text-3xl font-bold mb-8">
+        Vegan Special
+    </h1>
+
+    <!-- Top Categories -->
+    <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 text-center mb-10">
+        
+       
+        <div class="flex flex-col items-center">
+            <div class="w-20 h-20 rounded-full bg-gray-100 flex items-center justify-center">
+            <a href="healthy.html">
+                <img src="./assets/images/healthy baking icon.png" alt="Search" class="w-25 h-25 object-cover ">
+            </a>
+            </div>
+            <p class="text-md font-xl mt-2">Healthy <br>Baking</p>
+         
+        </div>
+     
+
+         <div class="flex flex-col items-center">
+            <div class="w-20 h-20 rounded-full bg-gray-100 flex items-center justify-center">
+            <a href="healthy.html">
+                <img src="./assets/images/no bake icon.png" alt="Search" class="w-25 h-25 object-cover"></a>
+             </div>
+            <p class="text-md font-xl mt-2">No-bake <br> Dessert</p>
+            
+            </div>
+           
+      
+
+         <div class="flex flex-col items-center">
+            <div class="w-20 h-20 rounded-full bg-gray-100 flex items-center justify-center">
+            <a href="vegan.html">
+                <img src="./assets/images/protein icon.png" alt="Search" class="w-25 h-25 object-cover"></a>
+            </div>
+            <p class="text-md font-xl mt-2">Protein<br> Packed</p>
+            
+        </div>
+
+        <div class="flex flex-col items-center">
+            <div class="w-20 h-20 rounded-full bg-gray-100 flex items-center justify-center">
+           <a href="vegan.html">
+                <img src="./assets/images/minute icon5.png" alt="Search" class="w-25 h-25 object-cover">
+            </a></div>
+            <p class="text-md font-xl mt-2">5-Minute Recipe</p>
+           
+        </div>
+
+       <div class="flex flex-col items-center">
+            <div class="w-20 h-20 rounded-full bg-gray-100 flex items-center justify-center">
+            <a href="healthy.html">
+                <img src="./assets/images/icon5.png" alt="Search" class="w-25 h-25 object-cover"></a>
+        </div>
+            <p class="text-md font-xl">5-Ingredients</p>
+           
+        </div>
+
+       <div class="flex flex-col items-center">
+            <div class="w-20 h-20 rounded-full bg-gray-100 flex items-center justify-center">
+           <a href="vegan.html">
+                <img src="./assets/images/vegan icon.png" alt="Search" class="w-25 h-25 object-cover">
+            </a></div>
+            <p class="text-md font-xl">Vegan Special</p>
+      
+    </div>
+</div>
+    <!-- Main Layout -->
+    <div class="flex flex-col lg:flex-row gap-8">
+
+        <!-- Left Filter -->
+        <aside class="w-full lg:w-1/4">
+            <div class="sticky top-5">
+
+                <h2 class="font-bold text-lg mb-4">Filter by Lifestyle</h2>
+                <ul class="space-y-3 text-sm ">
+                    <li><input type="checkbox" class="mr-2  border-1 border-red-500 accent-red-500">Vegan (15)</li>
+                    <li><input type="checkbox" class="mr-2">Dairy-free (20)</li>
+                    <li><input type="checkbox" class="mr-2">Gluten-free (14)</li>
+                    <li><input type="checkbox" class="mr-2">Nut-free (12)</li>
+                    <li><input type="checkbox" class="mr-2">Refined Sugar-free (27)</li>
+                    <li><input type="checkbox" class="mr-2">Egg-free (13)</li>
+                </ul>
+
+                <h2 class="font-bold text-lg mt-8 mb-4">Filter by Meal Time</h2>
+                <ul class="space-y-3 text-sm">
+                    <li><input type="checkbox" class="mr-2">Breakfast (15)</li>
+                    <li><input type="checkbox" class="mr-2">Meal Prep (20)</li>
+                    <li><input type="checkbox" class="mr-2">Quick dinners (14)</li>
+                    <li><input type="checkbox" class="mr-2">Smoothies & juices (13)</li>
+                    <li><input type="checkbox" class="mr-2">Healthy snacks (27)</li>
+                    <li><input type="checkbox" class="mr-2">Baking recipes (13)</li>
+                </ul>
+
+            </div>
+        </aside>
+
+        <!-- Right Cards -->
+        <div class="w-full h-[1200px]  lg:w-3/4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+                 <a href="apple.html">
+                <img src="./assets/images/vegan special 1.png" class="w-full h-3/4  object-cover">
+                <p class="text-center text-md p-3">High protein <br>chocolate mousse</p></a>
+            </div>
+
+             <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+                <a href="apple.html">
+                <img src="./assets/images/vegan special 2.png" class="w-full h-3/4  object-cover">
+                <p class="text-center text-md p-3">Big mac lamb chops<br> and veggies</p></a>
+            </div>
+
+             <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+              <a href="apple.html">
+                <img src="./assets/images/vegan special 3.png" class="w-full h-3/4  object-cover">
+                <p class="text-center text-md p-3">Healthy apple<br>crumble</p>
+                </a>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+               <a href="apple.html">
+                <img src="./assets/images/vegan special 4.png" clss="w-full h-3/4  object-cover">
+                <p class="text-center text-md p-3">One pot <br>lasagna</p></a>
+            </div>
+
+             <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+                  <a href="apple.html">
+                <img src="./assets/images/vegan special 5.png" class="w-full h-3/4  object-cover">
+                <p class="text-center text-md p-3">Shrimp and chicken <br>fried rice</p>
+                </a>
+            </div>
+
+             <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+               <a href="apple.html">
+                <img src="./assets/images/vegan special 6.png" class="w-full h-3/4  object-cover">
+                <p class="text-center text-md p-3">Fudgy cherry <br>brownies</p></a>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+              <a href="apple.html">
+                <img src="./assets/images/vegan special 7.png" class="w-full h-3/4  object-cover">
+                <p class="text-center text-md p-3">Sushi<br> burritos </p></a>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+              <a href="apple.html">
+                <img src="./assets/images/vegan special 8.png" class="w-full h-3/4  object-cover">
+                <p class="text-center text-md p-3">Chickpea and <br>chicken salad</p></a>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+               <a href="apple.html">
+                <img src="./assets/images/vegan special 9.png" class="w-full h-3/4  object-cover">
+                <p class="text-center text-md p-3">One pot mutton <br> flavoured rice/p></p>
+            </div>
+
+        </div>
+
+    
+</div>
+    <!-- Pagination -->
+    <div class="flex justify-center gap-4 mt-10 font-bold items-center text-lg">
+        <span class="text-red-600">1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+
+</div>
+
+
+
+
+<!--Footer-->
+<footer class=" py-16 px-4 text-center">
+
+    <!-- Logo -->
+    <div class="flex justify-center">
+        <img src="./assets/images/logo.png" alt="Logo" class="h-20 w-auto">
+    </div>
+
+    <!-- Heading -->
+    <h2 class="text-lg md:text-xl font-md">
+        Healthy recipes for busy people
+    </h2>
+
+    <!-- Social Icons -->
+    <div class="flex justify-center gap-5 mt-6 text-red-600 text-2xl">
+        <img src="./assets/images/social media links.png" alt="social" class="h-15 w-auto">
+    </div>
+
+    <!-- Email -->
+    <div class="max-w-sm mx-auto mt-8 flex items-center border-b border-gray-500">
+           <input
+          type="email"
+          value="Enter your email address here"
+          onfocus="if(this.value=='Enter your email address here') this.value=''; this.placeholder='suja123@gmail.com';"
+          onblur="if(this.value=='') {this.value='Enter your email address here'; this.placeholder='';}"
+          class="w-full cursor-pointer bg-transparent outline-none py-2 text-black">
+            <button class="text-2xl ml-2">
+                <img src="./assets/images/arrow2.png" class="w-6 h-6 object-cover">
+            </button>
+    </div>
+
+    
+
+    <p class="mt-4 text-sm">
+        *Be informed about the latest recipes and workshops
+    </p>
+
+    <!-- Bottom -->
+    <div class="flex flex-col md:flex-row justify-between items-center mt-12 text-md font-semibold max-w-6xl mx-auto">
+        <a href="privacy.html">Privacy Policy</a>
+        <p>copyrights 2022 © my kitchen</p>
+    </div>
+
+</footer>
+

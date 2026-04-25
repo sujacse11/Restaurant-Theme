@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant theme</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <style>
+@keyframes slide1 {
+  0%, 45% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+@keyframes slide2 {
+  0%, 45% { opacity: 0; }
+  50%, 100% { opacity: 1; }
+}
+
+.animate-slide1 {
+  animation: slide1 1s ease-in-out;
+}
+
+.animate-slide2 {
+  animation: slide2 1s infinite;
+}
+</style>
+</head>
+<body class="font-[Poppins] overflow-x-hidden">
+   
+<!-- Top Bar -->
+<div class="bg-gray-200 py-4 px-6  text-xl text-centerflex flex-col md:flex-row items-center justify-between text-sm ">
+    <p class="text-balck text-xl text-center   md:mb-0">Subscribe to our newsletter - 
+        <span class=" text-balck text-lg  text-center font-semibold font-Manrope">mykitchen@gmail.com </span>
+    </p>
+</div>
+
+<!-- Main Header -->
+<header class="max-w-7xl mx-auto px-6 md:px-16 py-6">
+    <div class="flex flex-col md:flex-row items-center justify-between border-b pb-6">
+      
+        <!-- Logo -->
+        <div class="text-center md:text-left mb-4 md:mb-0">
+            <img src="./assets/images/logo.png" alt="Logo" class="h-16 w-auto">
+        </div>
+
+        <!-- Search -->
+        <div class="flex justify-end">
+            <div class="flex items-center w-full md:w-80">
+                <input type="text" placeholder="Search" class="w-3/4 border-b  outline-none text-md text-black px-1 py-2">
+        
+                <!-- Search Icon Button -->
+                <button class="ml-4 bg-red-600 w-10 h-10 rounded-full flex items-center justify-center">
+                    <img src="./assets/images/search.png" alt="Search" class="w-4 h-4">
+                </button>
+            </div>
+        </div>
+    </div>
+
+<!-- Navbar -->
+<nav class="mt-6 border-b pb-4">
+    <ul class="flex flex-wrap justify-center md:justify-start gap-4 md:gap-10 font-large">
+        <li><a href="index.html" class="text-red-500 hover:text-red-500 font-lg" >HOME</a></li>
+        <li><a href="receipes.html" class=" hover:text-red-500 font-lg">RECIPES</a></li>
+        <li><a href="blog.html" class=" hover:text-red-500 font-lg">BLOG</a></li>
+        <li><a href="about.html" class=" hover:text-red-500 font-lg">ABOUT ME</a></li>
+    </ul>
+</nav>
+</header>
+
+<!--Banner Section-->
+
+<div class="max-w-7xl mx-auto px-4 ">
+    <div 
+        class="bg-cover bg-center h-[250px] sm:h-[350px] md:h-[400px] flex items-center justify-center "
+        style="background-image: url('./assets/images/hero\ image.png');">
+        <div class="text-center max-w-3xl">
+
+            <h1 class="text-red-600 font-bold 
+                    text-xl sm:text-3xl md:text-4xl lg:text-5xl">
+            Sharing my love for food
+            </h1>
+
+            <p class="text-black text-md sm:text-xl md:text-xl lg:text-2xl  mt-8 ">
+            I’m excited to share my passion for all things culinary.
+            Food is not just about nourishment: it’s an experience
+            that brings people together, evokes memories, and
+            sparks creativity.
+            </p>
+
+            <button class="mt-8 bg-red-600 hover:bg-white hover:text-red-600  text-white 
+                        px-6 sm:px-8 py-3 rounded-lg text-base sm:text-lg 
+                        font-md inline-flex items-center gap-3">
+                            GET IN TOUCH
+                <img src="./assets/images/arrow icon.png" alt="arrow" class="w-5 h-5 object-cover">
+        
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+<!--Image Content-->
+
+<div class="max-w-7xl mx-auto px-4 mt-10">
+<section class="bg-white py-10">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 px-4">
+
+        <!-- Card 1 -->
+        <div>
+             <a href="chicken.html" >
+            <img src="./assets/images/starter.png" alt="starter" class="w-full h-[250px] sm:h-[350px] md:h-[500px] object-cover animate-slide1">
+
+            <h4 class="text-red-600 uppercase text-sm mt-4">STARTER</h4>
+            <p class="text-sm font-medium mt-2">Caprese Salad Skewers</p></a>
+        </div>
+
+        <!-- Card 2 -->
+        <div>
+             <a href="chicken.html" >
+            <img src="./assets/images/mani course.png" alt="main" class="w-full h-[250px] sm:h-[350px] md:h-[500px] object-cover animate-slide1">
+
+            <h4 class="text-red-600 uppercase text-sm mt-4">MAIN COURSE</h4>
+            <p class="text-sm font-medium mt-2">Grilled Lemon Herb Chicken</p></a>
+        </div>
+
+    </div>
+</section>
+
+
+<!--Email Content-->
+
+<section class="py-10 px-4">
+  <div class="max-w-6xl mx-auto border-2 border-red-600  p-8 cursor-pointer">
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+
+      <!-- Column 1 -->
+      <div>
+        <p class="text-red-600 text-center text-lg">New recipes</p>
+        <h2 class="text-red-600 text-2xl font-bold mt-2">
+          Straight to your inbox
+        </h2>
+      </div>
+
+      <!-- Column 2 -->
+      <div>
+        <input
+          type="text"
+          value="Enter your name"
+          onfocus="if(this.value=='Enter your name') this.value=''; this.placeholder='Suja';"
+          onblur="if(this.value=='') {this.value='Enter your name'; this.placeholder='';}"
+          class="w-full cursor-pointer border-b  border-red-700 bg-transparent outline-none py-2 text-red-600">
+      </div>
+
+      <!-- Column 3 -->
+        <div class="flex items-center border-b border-red-600 ">
+        <input
+          type="email"
+          value="Enter your email address here"
+          onfocus="if(this.value=='Enter your email address here') this.value=''; this.placeholder='suja123@gmail.com';"
+          onblur="if(this.value=='') {this.value='Enter your email address here'; this.placeholder='';}"
+          class="w-full cursor-pointer bg-transparent outline-none py-2 text-red-700">
+        
+        <button class="ml-4 bg-red-600   h-5  flex items-center justify-center">
+            <img src="./assets/images/arrow3.png" alt="arrow" class="w-5 h-5 object-cover ">
+        </button>
+        </div>
+            
+       
+    
+    </div>
+
+  </div>
+</section>
+
+<!--Last Receipe-->
+<section class="px-6 py-10 ">
+    
+    <!-- Heading -->
+    <div class="flex justify-between items-center mb-8">
+        <h2 class="text-2xl font-medium">Latest Recipes</h2>
+
+        <a href="receipes.html" 
+           class="bg-red-600 text-white px-6 py-3 rounded-xl flex items-center gap-2 hover:bg-red-700">
+            View All <img src="./assets/images/view all arrow icon.png" class="w-5 h-5 object-cover">
+        </a>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+
+        <a href="chicken.html" class="bg-white rounded-2xl shadow-lg overflow-hidden w-full" hover:scale-105 duration-300">
+            <img src="./assets/images/latest recipes 1.png" class="w-full h-64 object-cover">
+            <p class="text-center text-md p-3">Chickpea and <br>sprouts salad</p>
+        </a>
+
+        <a href="Fudgy.html" class="bg-white rounded-2xl shadow-lg overflow-hidden w-full" hover:scale-105 duration-300">
+            <img src="./assets/images/latest recipes 2.png" class="w-full h-64 object-cover">
+            <p class="text-center text-md p-3">High protein<br>chocolate mousse</p>
+        </a>
+
+        <a href="mutton.html" class="bg-white rounded-2xl shadow-lg overflow-hidden w-full"hover:scale-105 duration-300">
+            <img src="./assets/images/latest recipes 3.png" class="w-full h-64 object-cover">
+            <p class="text-center text-md p-3">Big mac lamb chops<br> and veggies</p>
+        </a>
+
+        <a href="apple.html" class="bg-white rounded-2xl shadow-lg overflow-hidden w-full" hover:scale-105 duration-300">
+            <img src="./assets/images/latest recipes 4.png" class="w-full h-64 object-cover">
+            <p class="text-center text-md p-3">Healthy apple<br> crumble</p>
+        </a>
+
+    </div>
+</section>
+</div>
+<!--View More-->
+
+<section class="bg-red-600 w-full py-8 px-4">
+    <div class="max-w-6xl mx-auto border border-white px-8 py-6">
+        
+        <div class="flex flex-col md:flex-row items-center justify-center">
+
+            <!-- Left -->
+            <div class="text-white text-center items-center  justify-center md:text-left">
+                <h2 class="text-2xl font-medium">Hello there! I am Tiffy.</h2>
+                <p class="text-xl mt-3">Start cooking with me</p>
+
+                <div class="text-white text-center items-center  justify-center md:text-left">
+                    <img src="./assets/images/social media links 3.png" class="w-20 h-20 object-contain mx-auto">
+                </div>
+
+                <a href="#" class="flex justify-center mt-6 text-lg  font-semibold hover:underline ">
+                    VIEW MORE
+                </a>
+            </div>
+
+            <!-- Right -->
+            <div class="flex flex-col md:flex-row items-center ">
+               <img src="./assets/images/profile.png" alt="Tiffy" 
+                 class="w-45 h-40 md:w-60 md:h-60 rounded-full object-cover mx-auto">
+            </div>
+
+        </div>
+
+    </div>
+    
+</section>
+
+
+<!--Readers Favourite -->
+ <div class="max-w-7xl mx-auto px-4 mt-10">
+<section class="px-6 py-10 ">
+
+    
+    <!-- Heading -->
+    <div class="flex justify-between items-center mb-8">
+        <h2 class="text-2xl font-medium">Latest Recipes</h2>
+
+        <a href="blog.html" 
+           class="bg-red-600 text-white px-6 py-3 rounded-xl flex items-center gap-2 hover:bg-red-700">
+            View All <img src="./assets/images/view all arrow icon.png" class="w-5 h-5 object-cover">
+        </a>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+
+        <a href="chicken.html" class="bg-white rounded-2xl shadow-lg overflow-hidden w-64 hover:scale-105 duration-300">
+            <img src="./assets/images/latest recipes 1.png" class="w-full h-64 object-cover">
+            <p class="text-center text-md p-3">Time saving meal <br>prep </p>
+        </a>
+
+        <a href="lasagna.html"class="bg-white rounded-2xl shadow-lg overflow-hidden w-64 hover:scale-105 duration-300">
+            <img src="./assets/images/latest recipes 2.png" class="w-full h-64 object-cover">
+            <p class="text-center text-md p-3">Toddler -friendly<br>foods</p>
+        </a>
+
+        <a href="mutton.html"class="bg-white rounded-2xl shadow-lg overflow-hidden w-64 hover:scale-105 duration-300">
+            <img src="./assets/images/latest recipes 3.png" class="w-full h-64 object-cover">
+            <p class="text-center text-md p-3">10-must try vegan<br> recipes</p>
+        </a>
+
+        <a href="chicken.html"class="bg-white rounded-2xl shadow-lg overflow-hidden w-64 hover:scale-105 duration-300">
+            <img src="./assets/images/latest recipes 4.png" class="w-full h-64 object-cover">
+            <p class="text-center text-md p-3">Canning and<br> preserving methods</p>
+        </a>
+
+    </div>
+</section>
+</div>
+
+
+
+
+<!--News leter-->
+<section class="py-10 px-4">
+    <div class="max-w-5xl mx-auto border border-red-500 py-10 px-6 text-center">
+
+        <h2 class="text-red-600 text-3xl font-medium">
+            Our Newsletter
+        </h2>
+
+        <p class="text-black text-xl md:text-xl mt-4 leading-relaxed">
+            Subscribe to our newsletter & keep up with our latest recipes
+            <br class="hidden md:block">
+            and organized workshops.
+        </p>
+
+        <!-- Input -->
+        <div class="max-w-sm mx-auto mt-8 flex items-center border-b border-gray-500">
+           <input
+          type="email"
+          value="Enter your email address here"
+          onfocus="if(this.value=='Enter your email address here') this.value=''; this.placeholder='suja123@gmail.com';"
+          onblur="if(this.value=='') {this.value='Enter your email address here'; this.placeholder='';}"
+          class="w-full cursor-pointer bg-transparent outline-none py-2 text-black">
+            <button class="text-2xl ml-2">
+                <img src="./assets/images/arrow2.png" class=" w-5 h-5 object-cover">
+            </button>
+        </div>
+
+    </div>
+</section>
+
+
+<!--piv-->
+<section class=" py-12 px-4">
+    
+    <!-- Heading -->
+    <div class="text-center max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-xl font-medium ">
+            Share Your Meals On With Instagram With 
+            <span class="text-red-600">#mykitchen</span>
+            <br>
+            & We Will Reward The Meal Of The Month!
+        </h2>
+    </div>
+
+    <!-- Images -->
+    <div class="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 mt-10">
+        
+        <img src="./assets/images/insta 1.png" class="w-full h-28 sm:h-40 md:h-48 object-cover rounded-md">
+        <img src="./assets/images/insta 2.png" class="w-full h-28 sm:h-40 md:h-48 object-cover rounded-md">
+        <img src="./assets/images/insta 3.png" class="w-full h-28 sm:h-40 md:h-48 object-cover rounded-md">
+        <img src="./assets/images/insta 4.png" class="w-full h-28 sm:h-40 md:h-48 object-cover rounded-md">
+        <img src="./assets/images/insta 5.png" class="w-full h-28 sm:h-40 md:h-48 object-cover rounded-md">
+
+    </div>
+
+</section>
+
+<!--Footer-->
+<footer class=" py-16 px-4 text-center">
+
+    <!-- Logo -->
+    <div class="flex justify-center">
+        <img src="./assets/images/logo.png" alt="Logo" class="h-20 w-auto">
+    </div>
+
+    <!-- Heading -->
+    <h2 class="text-lg md:text-xl font-md">
+        Healthy recipes for busy people
+    </h2>
+
+    <!-- Social Icons -->
+    <div class="flex justify-center gap-5 mt-6 text-red-600 text-2xl">
+        <img src="./assets/images/social media links.png" alt="social" class="h-15 w-auto">
+    </div>
+
+    <!-- Email -->
+    <div class="max-w-sm mx-auto mt-8 flex items-center border-b border-gray-500">
+           <input
+          type="email"
+          value="Enter your email address here"
+          onfocus="if(this.value=='Enter your email address here') this.value=''; this.placeholder='suja123@gmail.com';"
+          onblur="if(this.value=='') {this.value='Enter your email address here'; this.placeholder='';}"
+          class="w-full cursor-pointer bg-transparent outline-none py-2 text-black">
+            <button class="text-2xl ml-2">
+                <img src="./assets/images/arrow2.png" class="w-6 h-6 object-cover">
+            </button>
+    </div>
+
+    
+
+    <p class="mt-4 text-sm">
+        *Be informed about the latest recipes and workshops
+    </p>
+
+    <!-- Bottom -->
+    <div class="flex flex-col md:flex-row justify-between items-center mt-12  text-md font-semibold  max-w-6xl mx-auto">
+        <a href="privacy.html">Privacy Policy</a>
+        <p>copyrights 2022 © my kitchen</p>
+    </div>
+
+</footer>
